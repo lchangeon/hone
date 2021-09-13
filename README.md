@@ -7,7 +7,7 @@ web applications. <i>Hone</i> is simple and light, its architecture based on MVC
 (Monitor / View / Controller) pattern will allow you to organize your code and 
 distinguish the roles within your modules.
 </p>
-<p align="center"> <img src = "./ressources/hone_mvc.png"/ class="center" width=50%> </p>
+<p align="center"> <img src = "./ressources/hone_mvc.png"/ class="center" width=50% alt="Hone framework / MVC architecture"> </p>
 
 ## Database Engine Abstraction
 
@@ -19,7 +19,7 @@ by preventing malicious SQL injections. <br>
 <i>Hone</i> thus allows you to have greater technical independence from your database engine.
 </p>
 
-<p align="center"> <img src = "./ressources/hone_dao.png"/ class="center" width=60%> </p>
+<p align="center"> <img src = "./ressources/hone_dao.png"/ class="center" width=60% alt="Hone framework / DAO pattern"> </p>
 
 ## Template engine
 
@@ -37,17 +37,16 @@ or capitalize on it to implement your project.</p>
 
 <p>Here are some screenshots taken from the template website :</p>
 
-<figure class="center" width=70%>
-    <p align="center"> <img src = "./ressources/screenshot_home.jpg"/ alt="Hone framework home screenshot" >
-    <figcaption align="center"><i>Hone framework  / Template website home screenshot</i>  </figcaption>
-    </p>
-</figure>
+<p align="center"> 
+  <img src = "./ressources/screenshot_home.jpg"/ alt="Hone framework home screenshot" width=70%><br>
+  <i>Hone framework  / Template website home screenshot</i>
+</p>
 
-<figure class="center" width=70%>
-    <p align="center"> <img src = "./ressources/screenshot_login.jpg"/ alt="Hone framework login screenshot" >
-    <figcaption align="center"><i>Hone framework  / Template website login screenshot</i>  </figcaption>
-    </p>
-</figure>
+<p align="center"> 
+  <img src = "./ressources/screenshot_login.jpg"/ alt="Hone framework login screenshot" width=70%><br>
+  <i>Hone framework  / Template website login screenshot</i>
+</p>
+
 
 ## Documentation and configuration guide
 
