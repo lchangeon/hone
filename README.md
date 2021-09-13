@@ -35,9 +35,23 @@ A few pages of content and full member management mechanic will allow you to app
 flexibility and power of the framework. It will be easy for you to adapt this template 
 or capitalize on it to implement your project.</p>
 
+<p>Here are some screenshots taken from the template website :</p>
+
+<figure class="center" width=70%>
+    <p align="center"> <img src = "./ressources/screenshot_home.jpg"/ alt="Hone framework home screenshot" >
+    <figcaption align="center"><i>Hone framework  / Template website home screenshot</i>  </figcaption>
+    </p>
+</figure>
+
+<figure class="center" width=70%>
+    <p align="center"> <img src = "./ressources/screenshot_login.jpg"/ alt="Hone framework login screenshot" >
+    <figcaption align="center"><i>Hone framework  / Template website login screenshot</i>  </figcaption>
+    </p>
+</figure>
+
 ## Documentation and configuration guide
 
-<p>A documentation in the form of a tutorial is being written and will be available very soon ...
+<p>A documentation made as a tutorial is being written and will be available very soon ...
 Stay in touch !</p>
 
 ## License
