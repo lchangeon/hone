@@ -39,12 +39,12 @@ or capitalize on it to implement your project.</p>
 
 <p align="center"> 
   <img src = "./ressources/screenshot_home.jpg"/ alt="Hone framework home screenshot" width=70%><br>
-  <i>Hone framework  / Template website home screenshot</i>
+  <i>Screenshot 1 - Hone framework : Template website home page</i>
 </p>
-
+<br>
 <p align="center"> 
   <img src = "./ressources/screenshot_login.jpg"/ alt="Hone framework login screenshot" width=70%><br>
-  <i>Hone framework  / Template website login screenshot</i>
+  <i>Screenshot 2 - Hone framework : Template website login page</i>
 </p>
 
 
