@@ -30,10 +30,10 @@ ease of use are well established.
 
 ## About this repository
 
-<p>The sources available in this repository constitute a website template. 
-A few pages of content and full member management mechanic will allow you to appreciate the 
+<p>The source code available in this repository is a website template. 
+A few pages of content and full member management system will allow you to appreciate the 
 flexibility and power of the framework. It will be easy for you to adapt this template 
-or capitalize on it to implement your project.</p>
+or capitalize on it in order to implement your project.</p>
 
 <p>Here are some screenshots taken from the template website :</p>
 
@@ -46,11 +46,13 @@ or capitalize on it to implement your project.</p>
   <img src = "./ressources/screenshot_login.jpg"/ alt="Hone framework login screenshot" width=70%><br>
   <i>Screenshot 2 - Hone framework : Template website login page</i>
 </p>
-
+<br>
 
 ## Documentation and configuration guide
 
 <p>A documentation made as a tutorial is being written and will be available very soon ...
+In the meanwhile feel free to download the framework, test the template and play with it.<br>
+A configuration guide is available in this repository (cf "docs" folder).<br>
 Stay in touch !</p>
 
 ## License
