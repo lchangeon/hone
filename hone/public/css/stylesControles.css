@@ -1,0 +1,268 @@
+.form-control {
+  display: block;
+  width: 100%;
+  resize: none;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.autoWidth{
+  width: auto; 
+  display: inline-block;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+label {
+  font-size: 14px;
+  text-align: right;
+  margin: 0 0 1em 0; 
+  float: left; clear: left; width: 100%; padding-top: 7px;
+}
+
+.customRadio {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.customRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.customRadio:hover input ~ .checkmark {
+  background-color: orange;
+}
+
+/* When the radio button is checked, add a blue background */
+.customRadio input:checked ~ .checkmark {
+  background-color: orange;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.customRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.customRadio .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button{
+    display:inline-block;
+    width:100px;
+    text-align:center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffcb00;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.button_link{
+    display:inline-block;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: white;
+    color:#65d074;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.medium {
+   width:150px; 
+}
+
+.big {
+   width:200px; 
+}
+
+.button:hover {
+    background-color: #ffe788;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+}
+
+button:disabled:hover {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.handle-counter { 
+    overflow: hidden; 
+}
+
+.handle-counter .counter-minus,  .handle-counter .counter-plus,  .handle-counter input {
+  float: left;
+  text-align: center;
+}
+
+.handle-counter .counter-minus,  .handle-counter .counter-plus { text-align: center; }
+
+.handle-counter input {
+  width: 50px;
+  border-width: 1px;
+  border-left: none;
+  border-right: none;
+  padding: 6px 12px;
+}
+
+.counter {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;  
+}
+
+.counter:disabled, .counter:disabled:hover {
+  background-color: darkgrey;
+  cursor: not-allowed;
+  color: #fff;
+}
+
+.counter-primary { 
+    background-color: #737263;
+               }
+
+.counter-primary:hover, .counter-primary:focus { background-color: #43433c; }
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  background-color: white;
+  border: 1px solid #dedede;
+  color:black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-top: 12px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  z-index: 2;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #dedede transparent;
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+
+    .form-control {
+      margin-bottom: 0px;
+    } 
+
+    label {
+      margin: 0 0 0 0; 
+    }
+}
+
+
+

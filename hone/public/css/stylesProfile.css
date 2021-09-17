@@ -1,0 +1,190 @@
+hr{
+    width :100%;
+}
+
+.containerHead{
+    position: relative;
+    display: inline-block;
+    clear: both;
+    width: 30%;
+    font-size: 18px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.containerBody{
+    position: relative;
+    display: block;
+    clear: both;
+    width: 100%;
+    min-height: 60vh;
+    text-align: center;
+    overflow: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+.containerProfile{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.profileConfirm{
+    font-size: 14px;
+}
+
+span{
+    padding:5px;    
+}
+
+.containerText{
+    margin-top:40px;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.containerMessage{
+    margin-top:40px;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.containerAction{
+    margin-top:30px;
+    position: relative;
+    width: 100%;
+}
+
+.profile_pin_wrapper{
+    clear: both;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}    
+    
+.profile_pin{
+  display: inline-block;  
+  position:relative;
+  width:auto;
+  padding-left:25px;  
+  padding-right:25px; 
+  text-align:center;
+  vertical-align: top;
+  border: 0px solid #f1f0e8;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  
+}
+
+.profile_pin img{
+ height:60px;
+ max-width:100%; 
+}
+
+.profile_pin:hover{
+    border-bottom: 2px solid lightgrey;
+}
+
+.selected_pin{
+    border-bottom: 2px solid orange;
+    pointer-events: none;
+}
+
+
+.profile_pin_container{
+  position:relative;
+  clear: both;
+  width: 100%;
+}
+
+.profile_pin h1{
+  padding-top:10px;
+  font-size: 18px;
+  color: #6b6b6b;  
+}
+
+.boxWrapper{
+  width:100%;
+  background-color: #eee;
+  clear: both;
+  padding: 5px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.boxBody{
+  width: 100%;
+  position: relative;
+  clear: both;  
+}
+
+.boxAction{
+  position: relative;
+  clear: both; 
+  padding-bottom: 10px;
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+.profile_pin img{
+ height:30px;
+}
+
+.profile_pin h1{
+  padding-top:6px;
+  font-size: 14px; 
+}
+
+.containerProfile{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.boxWrapper{
+  margin-left: 10px;
+  margin-right: 10px;
+
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.boxAction {
+    padding-bottom: 5px;
+}
+
+.boxAction span{
+    width:100%;
+    clear:both;
+    display: inline-block;
+    text-align: center;
+}
+.boxAction label{
+    text-align: left;
+}
+
+.boxBody span{
+    width:100%;
+    clear:both;
+    display: block;
+}
+.boxBody label{
+    text-align: left;
+}
+}    
+
+
+
+
+
+

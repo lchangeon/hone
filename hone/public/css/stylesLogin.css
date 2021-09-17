@@ -1,0 +1,126 @@
+html,body {
+
+
+}
+
+.login_title{
+    clear:both;
+    display:table;
+    position:relative;
+    width : 100%;
+    height:60px; 
+    text-align: center;
+}
+
+.login_title span{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 24px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;
+}
+
+.login_tiers{
+    clear:both;
+    position:relative;
+    width : 100%; 
+    margin-bottom: 10px;
+    height:20%; 
+    border: 1px solid lightgray;
+    font-size: 16px;
+    padding:10px;
+    text-align: center;
+    vertical-align: middle;    
+}
+
+.login_message{
+    color:red;   
+}
+
+.login_wrapper{
+    clear:both;
+    position:relative;
+    width : 100%;
+   height:50vh;  
+    margin-bottom: 20px;
+}
+
+.login_left{
+    float:left;
+    position:relative;
+    width : 49%;
+    border: 1px solid lightgray;
+    height:100%;
+    font-size: 16px;
+    padding:10px;
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.login_right{
+    float:right;
+    position:relative;  
+    width : 49%; 
+    border: 1px solid lightgray;
+    height:100%; 
+    font-size: 16px;
+    padding:10px;
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.login_box_top{
+    clear:both;
+    height:10%;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.login_box_middle_outer {
+    clear:both;
+    display:table;
+    height:75%;
+    width: 100%;
+}
+
+.login_box_middle_inner{
+    display:table-cell;
+    vertical-align: middle;
+    height:100%;
+    font-size: 16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.login_box_bottom{
+    clear:both;
+    height:15%;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;    
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+
+.login_wrapper{
+    clear:both;
+    position:relative;
+    width : 100%;
+height:100%;
+    margin-bottom: 20px;
+}
+
+.login_left{
+    clear:both;
+    width:100%;
+}
+.login_right{
+    margin-top:10px;  
+    margin-bottom: 10px;
+    clear:both;
+    width:100%;
+    overflow: auto;
+}
+}
+
+
+
