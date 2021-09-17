@@ -6,7 +6,7 @@
 
 Hone framework is available as a simple and adaptable template project. It’s easy to capitalize on it and to implement more advanced websites or applications.
 
- The installation comes down to copying the source code (contents of the "src" Github repo directory) to the destination of your choice. A configuration of the various paths is, of course, required, that is the subject of this document. In order to be clear, we will cover 2 possible scenarios: the installation and configuration of the framework on a local server on the one hand and on a hosted server on the other hand.
+ The installation comes down to copying the source code (contents of the "hone" Github repo directory) to the destination of your choice. A configuration of the various paths is, of course, required, that is the subject of this document. In order to be clear, we will cover 2 possible scenarios: the installation and configuration of the framework on a local server on the one hand and on a hosted server on the other hand.
 
  
 
@@ -29,7 +29,7 @@ Hone framework is available as a simple and adaptable template project. It’s e
 
 #### Copy of source code
 
- All we have to do is drop all the source code there (contents of the "src" Github repo directory). The project should look like this :
+ All we have to do is drop all the source code there (contents of the "hone" Github repo directory). The project should look like this :
 
  (Note that folders are shown with square brackets, files without)
 
@@ -114,7 +114,7 @@ In this scenario we rented a web space from a provider, we also have a domain na
 
 #### Copy of source code
 
-First, we will drop all of the source code in our newly created “myproject” directory (contents of the "src" Github repo directory). The web space for our project should look like this :
+First, we will drop all of the source code in our newly created “myproject” directory (contents of the "hone" Github repo directory). The web space for our project should look like this :
 
 (Note that folders are shown with square brackets, files without)
 
