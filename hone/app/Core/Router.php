@@ -31,12 +31,18 @@ use App\Core\Exceptions as exceptions;
  */
 class Router {
 
-    function __construct() {
+    function __construct($routesContent=null) {
        
         //Creates a session or resumes the current one 
         session_start();
-       ini_set('display_errors', 'on');
+        ini_set('display_errors', 'on');
        
+        //Manual routes are decoded
+        $routes = null;
+        if($routesContent != null){
+           $routes = json_decode($routesContent, true); 
+        }
+        
         //Was current session initiated ?
         if (!isset($_SESSION['initiated'])) {
             session_regenerate_id();
@@ -69,10 +75,28 @@ class Router {
         $requestedController = 'App\Controllers\\'.$url[0];
         try { 
 
-            //The requested controller does not exist : we throw an exception
-            //in order to catch the fatal error that will be generated
+            //The requested controller does not exist : 
+            //Before throwing an exception we check if the requested controller
+            //is not a manual route
             if (!class_exists($requestedController)) { 
-              throw new exceptions\ClassNotFoundException (CLASS_NOT_FOUND_MESSAGE); 
+                
+                $manualRoute = False;
+                if($routes != null){
+                    if(isset($routes[$url[0]])){
+                        $requestedController = 'App\Controllers\\'.$routes[$url[0]];  
+                        $manualRoute = True;
+                        
+                        //Manual route but the corresponding controller does not exist
+                        if (!class_exists($requestedController)) { 
+                            throw new exceptions\ClassNotFoundException (CLASS_NOT_FOUND_MESSAGE);           
+                        }
+                    }
+                }  
+                
+                //Not a manual route = we throw an exception
+                if(!$manualRoute){
+                    throw new exceptions\ClassNotFoundException (CLASS_NOT_FOUND_MESSAGE);
+                }
             } 
 
             //Instantiation of the requested controller

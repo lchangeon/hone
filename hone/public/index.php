@@ -35,6 +35,11 @@ require_once '../app/config/app_text.php';
 require_once '../app/config/client_ini.php';
 require_once '../app/config/session_starter.php';
 
+// In addition to automatic router, some specific routes like
+// siteMap for example can be specified manually in routes.json file
+// Manual routes are read and passed to front controller
+$routesContents = file_get_contents("../app/config/routes.json");
+
 use App\Core\Router;
 
-$app = new Router();
+$app = new Router($routesContents);
