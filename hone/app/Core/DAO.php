@@ -219,7 +219,7 @@ abstract class DAO {
             
             array_push($foundRows, $currentRow);
         }
-	return $foundRows;        
+        return $foundRows;        
     }
     
     protected function selectMultiRows_pb($qselect){
@@ -230,6 +230,22 @@ abstract class DAO {
          return $this->multiRowsPreBuildedSelect($className, $qselect);
     }
 
+    protected function manualQuery($className, $statement, $bind){
+        $stmt = $this->dbc->prepare($statement, $this->driver_option);
+        $stmt->execute($bind);
+        $foundRows = array();
+        while ($row = $stmt->fetch($this->fetch_style)) {
+            
+            if($className==NULL)
+                $currentRow = $row;
+            else
+                $currentRow = new $className($row);            
+            
+            array_push($foundRows, $currentRow);
+        }
+        return $foundRows;        
+    }
+    
     protected function update_pb($qupdate){
         
         $stmt = $this->dbc->prepare($qupdate->getStatement(), $this->driver_option);
