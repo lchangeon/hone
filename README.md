@@ -4,7 +4,7 @@
 <br>
 <i>Hone</i> (say honé literally “Bone” in Japanese) is a PHP framework designed to implement websites or 
 web applications. <i>Hone</i> is simple and light, its architecture based on MVC 
-(Monitor / View / Controller) pattern will allow you to organize your code and 
+(Model / View / Controller) pattern will allow you to organize your code and 
 distinguish the roles within your modules.
 </p>
 <p align="center"> <img src = "./ressources/hone_mvc.png"/ class="center" width=50% alt="Hone framework / MVC architecture"> </p>
